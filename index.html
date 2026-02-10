@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Caleb Green | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- BACKGROUND -->
+  <div class="background"></div>
+
+  <!-- SIDEBAR -->
+  <nav class="sidebar">
+    <div class="tab active" data-target="home">
+      <img src="assets/home.png" alt="Home">
+    </div>
+
+    <div class="tab" data-target="projects">
+      <img src="assets/projects.png" alt="Projects">
+    </div>
+  </nav>
+
+  <!-- CONTENT -->
+  <section class="page active" id="home">
+    <div class="glass-panel home-panel">
+      
+      <!-- Hero Section -->
+      <div class="hero-section">
+        <h1 class="hero-title">Caleb Green | IT Audit & GRC Associate</h1>
+        <p class="hero-subtitle">
+          MIS Graduate with a 3.9 GPA, specializing in Cybersecurity Frameworks (NIST CSF, SOC 2) and Data Integrity. Bridging the gap between technical security and enterprise risk management.
+        </p>
+        <div class="cta-buttons">
+          <button class="cta-primary" onclick="document.querySelector('[data-target=projects]').click()">
+            View My Projects
+          </button>
+          <a href="assets/Caleb_Green_Resume.pdf" target="_blank" class="cta-secondary">
+            Download Resume (PDF)
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Stats Bar -->
+      <div class="stats-bar">
+        <div class="stat-item">
+          <div class="stat-text">
+            <strong>3.9 GPA</strong>
+            <span>UNC Charlotte MIS</span>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-text">
+            <strong>Google Cybersecurity</strong>
+            <span>Professional Cert</span>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-text">
+            <strong>600k+ Rows</strong>
+            <span>Largest Data Audit</span>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-text">
+            <strong>Security+</strong>
+            <span>Expected April 2026</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Projects -->
+      <div class="featured-projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="project-grid-home">
+          
+          <div class="project-card" onclick="document.querySelector('[data-target=projects]').click(); setTimeout(() => document.querySelector('[data-project=tab1]').click(), 100)">
+            <div class="project-card-content">
+              <h3>IT Audit & SOC 2 Compliance</h3>
+              <p>Ensuring regulatory alignment for Botium Toys through a comprehensive gaps-analysis and remediation roadmap.</p>
+            </div>
+          </div>
+
+          <div class="project-card" onclick="document.querySelector('[data-target=projects]').click(); setTimeout(() => document.querySelector('[data-project=tab2]').click(), 100)">
+            <div class="project-card-content">
+              <h3>NIST Incident Response</h3>
+              <p>Managing a DDoS crisis using the NIST CSF lifecycle to protect and recover critical network infrastructure.</p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-card-content">
+              <h3>Enterprise Database Governance</h3>
+              <p>Architecting a secure relational system for McDonald's with a focus on data normalization and integrity.</p>
+            </div>
+          </div>
+
+          <div class="project-card" onclick="document.querySelector('[data-target=projects]').click(); setTimeout(() => document.querySelector('[data-project=tab3]').click(), 100)">
+            <div class="project-card-content">
+              <h3>Data Integrity & Risk Profiling</h3>
+              <p>Using R and Kaggle data to identify behavioral anomalies and validate health-data confidentiality.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Technical Toolkit -->
+      <div class="skills-section">
+        <h2 class="section-title">Technical Toolkit</h2>
+        <div class="skills-grid">
+          
+          <div class="skill-category">
+            <h3>Governance & Compliance</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">NIST CSF</span>
+              <span class="skill-tag">SOC 2</span>
+              <span class="skill-tag">GDPR</span>
+              <span class="skill-tag">PCI DSS</span>
+              <span class="skill-tag">Internal Controls</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Data & Auditing</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">SQL (Advanced)</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">R</span>
+              <span class="skill-tag">Power BI</span>
+              <span class="skill-tag">Excel (Advanced)</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Systems & Security</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Linux CLI</span>
+              <span class="skill-tag">Incident Response</span>
+              <span class="skill-tag">Firewall/IDS Config</span>
+              <span class="skill-tag">IAM</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Footer / Let's Connect -->
+      <div class="connect-section">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="connect-text">
+          Currently seeking an entry-level IT Audit or GRC role in the Charlotte area. Let's talk about how I can help your team manage risk.
+        </p>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/calebrobertgreen" target="_blank" class="social-link">
+            LinkedIn
+          </a>
+          <a href="https://kaggle.com/crgreen01" target="_blank" class="social-link">
+            Kaggle
+          </a>
+          <a href="mailto:calebrobertgreen@gmail.com" class="social-link">
+            Email
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="page" id="projects">
+    <div class="glass-panel">
+
+      <h1>Projects</h1>
+      <p>Case studies, labs, dashboards, and write-ups.</p>
+
+      <!-- Sub Tabs -->
+      <div class="cyber-tabs">
+        <button class="cyber-tab active" data-project="tab1">IT Audit & Regulatory Compliance</button>
+        <button class="cyber-tab" data-project="tab2">Incident Response (DDoS)</button>
+        <button class="cyber-tab" data-project="tab3">Data Integrity & Risk Analysis</button>
+      </div>
+
+      <!-- Project Pages -->
+      <div class="cyber-page active" id="tab1">
+        <h2>IT Security Audit & Compliance: Enterprise Controls Assessment</h2>
+        <p class="project-subtitle">Botium Toys — Simulated Enterprise IT Audit</p>
+
+        <div class="project-layout">
+
+          <!-- Left Main Content -->
+          <div class="project-main">
+            
+            <section class="project-section">
+              <h3>The Problem</h3>
+              <p>
+                Botium Toys, a growing international retailer, lacked a formalized security posture.
+                This created significant exposure to data breaches and regulatory penalties under
+                GDPR and PCI DSS, putting customer trust and business continuity at risk.
+              </p>
+            </section>
+
+            <section class="project-section">
+              <h3>Methodology</h3>
+              <p>
+                I conducted a structured gap analysis across 14 critical IT security controls,
+                including Least Privilege, Separation of Duties, and Encryption.
+                Each control was mapped directly to SOC 2, PCI DSS, and GDPR requirements
+                to identify compliance gaps and high-risk failure points.
+              </p>
+            </section>
+
+            <section class="project-section">
+              <h3>Key Recommendation</h3>
+              <p>
+                The audit uncovered a critical lack of Disaster Recovery planning and weak encryption protocols.
+                I developed a remediation roadmap prioritizing MFA implementation, encrypted data handling,
+                and automated backups to improve resilience and align the organization with SOC 2 controls.
+              </p>
+            </section>
+
+            <section class="project-section">
+              <h3>Controls Assessment Document</h3>
+              <div class="pdf-viewer-container">
+                <iframe src="assets/IT_Audit.pdf" class="pdf-viewer" title="IT Audit Controls Assessment"></iframe>
+                <a href="assets/IT_Audit.pdf" download class="pdf-download-btn">
+                  Download Full Report
+                </a>
+              </div>
+            </section>
+
+          </div>
+
+          <!-- Right Sidebar -->
+          <aside class="project-sidebar">
+            <h4>At a Glance</h4>
+
+            <div class="sidebar-item">
+              <strong>Role</strong>
+              <span>Lead IT Auditor (Simulated)</span>
+            </div>
+
+            <div class="sidebar-item">
+              <strong>Frameworks</strong>
+              <span>SOC 2, PCI DSS, GDPR</span>
+            </div>
+
+            <div class="sidebar-item">
+              <strong>Tools</strong>
+              <span>Microsoft Excel, Internal Control Frameworks</span>
+            </div>
+
+          </aside>
+
+        </div>
+      </div>
+
+      <div class="cyber-page" id="tab2">
+        <h2>Incident Response: Mitigating a DDoS Attack via NIST Framework</h2>
+        <p class="project-subtitle">Applied the NIST Cybersecurity Framework (CSF) to investigate, contain, and recover from a simulated distributed denial-of-service attack.</p>
+
+        <div class="project-layout">
+
+          <!-- Left Main Content -->
+          <div class="project-main">
+            
+            <section class="project-section">
+              <h3>The Incident</h3>
+              <p>
+                At 09:00, all network services became unresponsive. Traffic analysis revealed a malicious ICMP flood attack saturating network resources and causing a complete service outage across critical systems.
+              </p>
+            </section>
+
+            <section class="project-section">
+              <h3>Response Framework (NIST CSF)</h3>
+              
+              <div class="framework-step">
+                <h4>Identify</h4>
+                <p>
+                  Determined that ICMP flood traffic was the root cause of the outage, impacting 100% of available network resources.
+                </p>
+              </div>
+
+              <div class="framework-step">
+                <h4>Protect / Detect</h4>
+                <p>
+                  Implemented firewall rate limiting and source IP verification to mitigate spoofed ICMP traffic and prevent further saturation.
+                </p>
+              </div>
+
+              <div class="framework-step">
+                <h4>Recover</h4>
+                <p>
+                  Prioritized restoration of critical services before reintroducing non-critical systems once attack traffic subsided.
+                </p>
+              </div>
+            </section>
+
+            <section class="project-section">
+              <h3>Outcome & Key Takeaways</h3>
+              <p>
+                The structured NIST CSF approach enabled rapid triage, containment, and recovery. The incident reinforced the importance of proactive traffic filtering, network monitoring, and layered defensive controls.
+              </p>
+            </section>
+
+            <section class="project-section">
+              <h3>Incident Report Analysis</h3>
+              <div class="pdf-viewer-container">
+                <iframe src="assets/NIST.pdf" class="pdf-viewer" title="NIST Incident Report"></iframe>
+                <a href="assets/NIST.pdf" download class="pdf-download-btn">
+                  Download Full Report
+                </a>
+              </div>
+            </section>
+
+          </div>
+
+          <!-- Right Sidebar -->
+          <aside class="project-sidebar">
+            <h4>At a Glance</h4>
+
+            <div class="sidebar-item">
+              <strong>Role</strong>
+              <span>Security Analyst (Simulated)</span>
+            </div>
+
+            <div class="sidebar-item">
+              <strong>Framework</strong>
+              <span>NIST CSF</span>
+            </div>
+
+            <div class="sidebar-item">
+              <strong>Threat Type</strong>
+              <span>ICMP Flood (DDoS)</span>
+            </div>
+
+            <div class="sidebar-item">
+              <strong>Tools</strong>
+              <span>Network Analysis, Firewall Configuration</span>
+            </div>
+
+          </aside>
+
+        </div>
+      </div>
+
+      <div class="cyber-page" id="tab3">
+        <h2>Data Integrity & Risk Profiling: Smart Device Usage Analysis</h2>
+        <p class="project-subtitle">A substantive testing approach to data validation and behavioral anomaly detection using Fitbit biometric data.</p>
+
+        <div class="project-layout">
+
+          <!-- Left Main Content -->
+          <div class="project-main">
+            
+            <section class="project-section">
+              <h3>The Problem Statement</h3>
+              <p>
+                In a data-driven enterprise, inaccurate data leads to flawed decision-making. Using a public dataset of 30+ Fitbit users, I performed a deep-dive analysis to ensure data integrity and profile user behavior, simulating a substantive testing phase of a technical audit.
+              </p>
+            </section>
+
+            <section class="project-section">
+              <h3>Technical Transparency</h3>
+              <p>
+                I chose to publish this analysis on Kaggle to demonstrate reproducibility—a core tenet of IT governance. By hosting the code in a public notebook, I provide full transparency into my data-cleaning methodology and logic.
+              </p>
+              <div style="margin-top: 16px;">
+                <a href="https://www.kaggle.com/code/crgreen01/bellabeat-case-study" target="_blank" class="kaggle-button">
+                  View Full Kaggle Notebook & Code
+                </a>
+              </div>
+            </section>
+
+            <section class="project-section">
+              <h3>Methodology: Ensuring "Audit-Ready" Data</h3>
+              
+              <div class="framework-step">
+                <h4>Source Verification</h4>
+                <p>
+                  Evaluated the reliability of 30 days of biometric data across 18+ sources to establish data provenance and authenticity.
+                </p>
+              </div>
+
+              <div class="framework-step">
+                <h4>Data Cleansing</h4>
+                <p>
+                  Used R (tidyverse) to remediate 100% of inconsistent date-time formats and null values that would have compromised the audit trail.
+                </p>
+              </div>
+
+              <div class="framework-step">
+                <h4>Integrity Checks</h4>
+                <p>
+                  Merged daily activity and sleep datasets to ensure referential integrity between disparate data tables.
+                </p>
+              </div>
+            </section>
+
+            <section class="project-section">
+              <h3>Risk-Based Insights</h3>
+              <p>
+                <strong>Behavioral Anomaly Detection:</strong> Identified that 65% of users had inconsistent device engagement, highlighting a "retention risk" for the business.
+              </p>
+              <p>
+                <strong>Pattern Recognition:</strong> Discovered peak activity windows (8 AM – 7 PM), allowing for optimized "System Update" scheduling to minimize user disruption.
+              </p>
+            </section>
+
+            <section class="project-section">
+              <h3>Activity Heatmap Analysis</h3>
+              <div class="project-media">
+                 <img src="assets/activity-heatmap.png" alt="User Activity Heatmap" style="width: 100%; border-radius: 18px;">
+              </div>
+            </section>
+
+            <section class="project-section">
+              <h3>Governance & Privacy Reflections</h3>
+              <p>
+                While this project focused on health metrics, the analysis highlighted the importance of confidentiality for PII (Personally Identifiable Information). If this were a live audit, I would have focused on the encryption of health data in transit and the access controls surrounding the Fitbit API.
+              </p>
+            </section>
+
+          </div>
+
+          <!-- Right Sidebar -->
+          <aside class="project-sidebar">
+            <h4>At a Glance</h4>
+
+            <div class="sidebar-item">
+              <strong>Role</strong>
+              <span>Lead Risk Analyst (Project-based)</span>
+            </div>
+
+            <div class="sidebar-item">
+              <strong>Environment</strong>
+              <span>Kaggle (Technical Repository)</span>
+            </div>
+
+            <div class="sidebar-item">
+              <strong>Audit Focus</strong>
+              <span>Data Integrity, ETL, Anomaly Detection</span>
+            </div>
+
+            <div class="sidebar-item">
+              <strong>Tools</strong>
+              <span>R (tidyverse, ggplot2), SQL</span>
+            </div>
+
+          </aside>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
