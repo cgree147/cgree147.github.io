@@ -29,16 +29,19 @@
       
       <!-- Hero Section -->
       <div class="hero-section">
-        <h1 class="hero-title">Caleb Green | IT Audit & GRC Associate</h1>
+        <h1 class="hero-title">Caleb Green | Data Engineer & IT Governance Professional</h1>
         <p class="hero-subtitle">
-          MIS Graduate with a 3.9 GPA, specializing in Cybersecurity Frameworks (NIST CSF, SOC 2) and Data Integrity. Bridging the gap between technical security and enterprise risk management.
+          MIS Graduate with a 3.9 GPA, specializing in the Automation of Cloud Data Pipelines and Technical Risk Management. Experienced in architecting secure ETL solutions via AWS S3/RDS and Python to drive high-integrity Business Intelligence.
         </p>
         <div class="cta-buttons">
           <button class="cta-primary" onclick="document.querySelector('[data-target=projects]').click()">
             View My Projects
           </button>
-          <a href="assets/Caleb_Green_Resume.pdf" target="_blank" class="cta-secondary">
-            Download Resume (PDF)
+          <a href="assets/Caleb_Green_Data_Analyst_Resume.pdf" download target="_blank" class="cta-secondary">
+            Data Analyst Resume (PDF Download)
+          </a>
+          <a href="assets/Caleb_Green_GRC_Resume.pdf" download target="_blank" class="cta-secondary">
+            GRC Resume (PDF Download)
           </a>
         </div>
       </div>
@@ -151,7 +154,7 @@
       <div class="connect-section">
         <h2 class="section-title">Let's Connect</h2>
         <p class="connect-text">
-          Currently seeking an entry-level IT Audit or GRC role in the Charlotte area. Let's talk about how I can help your team manage risk.
+          I am currently seeking Data Analyst, Database Developer, or Junior Data Engineer roles in the Charlotte area. Let’s discuss how I can help your team turn complex datasets into clear, actionable business strategies.
         </p>
         <div class="social-links">
           <a href="https://linkedin.com/in/calebrobertgreen" target="_blank" class="social-link">
@@ -160,7 +163,7 @@
           <a href="https://kaggle.com/crgreen01" target="_blank" class="social-link">
             Kaggle
           </a>
-          <a href="mailto:calebrobertgreen@gmail.com" class="social-link">
+          <a href="/cdn-cgi/l/email-protection#c1a2a0ada4a3b3aea3a4b3b5a6b3a4a4af81a6aca0a8adefa2aeac" class="social-link">
             Email
           </a>
         </div>
@@ -180,6 +183,7 @@
         <button class="cyber-tab active" data-project="tab1">IT Audit & Regulatory Compliance</button>
         <button class="cyber-tab" data-project="tab2">Incident Response (DDoS)</button>
         <button class="cyber-tab" data-project="tab3">Data Integrity & Risk Analysis</button>
+        <button class="cyber-tab" data-project="tab4">Cloud Data Pipeline & BI</button>
       </div>
 
       <!-- Project Pages -->
@@ -446,6 +450,145 @@
             <div class="sidebar-item">
               <strong>Tools</strong>
               <span>R (tidyverse, ggplot2), SQL</span>
+            </div>
+
+          </aside>
+
+        </div>
+      </div>
+
+      <div class="cyber-page" id="tab4">
+        <h2>Automated Cloud Data Pipeline & Retail Intelligence</h2>
+        <p class="project-subtitle">Production-grade ETL pipeline leveraging AWS infrastructure to automate retail data flow from S3 to RDS for real-time business intelligence</p>
+
+        <div class="project-layout">
+
+          <!-- Left Main Content -->
+          <div class="project-main">
+            
+            <section class="project-section">
+              <h3>Executive Summary</h3>
+              <p>
+                I developed a production-grade ETL (Extract, Transform, Load) pipeline that automates the flow of retail data from a cloud data lake into a high-performance relational database. By normalizing flat-file data into a Star Schema, I optimized the data for business intelligence, enabling real-time analysis of holiday sales trends and macroeconomic impacts.
+              </p>
+            </section>
+
+            <section class="project-section">
+              <h3>Architecture & The Data Journey</h3>
+              <p>
+                The project mimics a modern corporate data stack, moving data through three distinct layers:
+              </p>
+              
+              <div class="framework-step">
+                <h4>Extraction (Raw Layer)</h4>
+                <p>
+                  Utilized AWS S3 as a scalable data lake to store raw CSV sales data, ensuring the data is decoupled from local hardware and accessible globally.
+                </p>
+              </div>
+
+              <div class="framework-step">
+                <h4>Transformation (Processing Layer)</h4>
+                <p>
+                  Engineered a Python ETL script that programmatically cleans the data and reorganizes it into a 3rd Normal Form (3NF) relational structure.
+                </p>
+              </div>
+
+              <div class="framework-step">
+                <h4>Loading (Warehouse Layer)</h4>
+                <p>
+                  Automated the data load into an AWS RDS (PostgreSQL) instance using SQLAlchemy, creating a centralized "Source of Truth" for analysts.
+                </p>
+              </div>
+            </section>
+
+            <section class="project-section">
+              <h3>Database Engineering (SQL)</h3>
+              <p>
+                To ensure data integrity and query performance, I transitioned the data from a single "flat" file into three related tables. This reduces data redundancy and allows for more complex, efficient reporting:
+              </p>
+              <p style="margin-top: 12px;">
+                <strong>stores:</strong> Dimension table containing unique location metadata<br>
+                <strong>economic_indicators:</strong> Tracks CPI, Fuel Prices, and Unemployment over time<br>
+                <strong>sales_transactions:</strong> Fact table capturing weekly revenue per store
+              </p>
+              <div class="project-media" style="margin-top: 20px;">
+                <img src="assets/pgAdminScreenShot.jpg" alt="PostgreSQL Database Schema" style="width: 100%; border-radius: 18px;">
+              </div>
+              <p style="margin-top: 12px; font-size: 15px;">
+                Implemented Primary and Foreign Key relationships within the RDS environment to maintain referential integrity.
+              </p>
+            </section>
+
+            <section class="project-section">
+              <h3>Python ETL Implementation</h3>
+              <div class="project-media">
+                <img src="assets/CodeSnipScreenShot.jpg" alt="Python ETL Code" style="width: 100%; border-radius: 18px;">
+              </div>
+            </section>
+
+            <section class="project-section">
+              <h3>Data Visualization & Insights (Power BI)</h3>
+              <p>
+                I connected the data layer to Power BI to translate rows and columns into actionable business insights:
+              </p>
+              
+              <div class="dashboard-grid">
+                <div class="dashboard-item">
+                  <img src="assets/salesbyyearscreenshot.jpg" alt="Sales by Year" style="width: 100%; border-radius: 12px;">
+                  <p class="dashboard-caption"><strong>Seasonal Revenue Spikes:</strong> Data confirms a 20%+ increase in weekly sales during Q4, driven by Thanksgiving and Christmas cycles</p>
+                </div>
+                
+                <div class="dashboard-item">
+                  <img src="assets/unemploymentsalesscreenshot.jpg" alt="Unemployment vs Sales" style="width: 100%; border-radius: 12px;">
+                  <p class="dashboard-caption"><strong>Macroeconomic Resilience:</strong> Correlation analysis shows Walmart revenue remains resilient during economic fluctuations</p>
+                </div>
+                
+                <div class="dashboard-item">
+                  <img src="assets/weeklysalesbystorescreenshot.jpg" alt="Weekly Sales by Store" style="width: 100%; border-radius: 12px;">
+                  <p class="dashboard-caption"><strong>Top-Tier Performers:</strong> Top 10% of stores contribute disproportionately to total revenue, suggesting inventory optimization opportunities</p>
+                </div>
+                
+                <div class="dashboard-item">
+                  <img src="assets/holidayweeklysalesscreenshot.jpg" alt="Holiday Sales" style="width: 100%; border-radius: 12px;">
+                  <p class="dashboard-caption"><strong>Holiday Impact:</strong> Quantified promotional cycle effectiveness across store locations</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="project-section">
+              <h3>Technical Challenges & Solutions</h3>
+              <p>
+                <strong>Challenge:</strong> Connecting local BI tools to cloud databases often involves SSL certificate hurdles.
+              </p>
+              <p>
+                <strong>Solution:</strong> I navigated AWS Security Group (firewall) configurations and implemented an ODBC connection string with specific SSL parameters to ensure a secure, successful data handshake between Power BI and the AWS Cloud.
+              </p>
+            </section>
+
+          </div>
+
+          <!-- Right Sidebar -->
+          <aside class="project-sidebar">
+            <h4>At a Glance</h4>
+
+            <div class="sidebar-item">
+              <strong>Role</strong>
+              <span>Data Engineer (Project-based)</span>
+            </div>
+
+            <div class="sidebar-item">
+              <strong>Stack</strong>
+              <span>AWS (S3, RDS), Python, SQL, Power BI</span>
+            </div>
+
+            <div class="sidebar-item">
+              <strong>Focus Areas</strong>
+              <span>ETL Automation, Cloud Architecture, Star Schema Design</span>
+            </div>
+
+            <div class="sidebar-item">
+              <strong>Tools</strong>
+              <span>Pandas, SQLAlchemy, Boto3, ODBC</span>
             </div>
 
           </aside>
